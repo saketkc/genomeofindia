@@ -1,0 +1,19 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+suppressPackageStartupMessages({
+    library(tidyverse)
+    library(googlesheets4)
+
+})
+
+```
+
+
+```{r}
+sheet <- read_sheet("https://docs.google.com/spreadsheets/d/1irlBHJ_tliY3DQLhHuGFpveEjNhC0POA3lpEhLzTljc/edit?usp=sharing", sheet = "Index")
+sheet
+```
